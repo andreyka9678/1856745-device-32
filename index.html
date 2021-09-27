@@ -7,14 +7,15 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">device</a>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-items">
-            <a class="navigation-link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="navigation-items">
-            <a class="navigation-link" href="#">Войти</a>
-          </li>
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" src="#" alt="device">
+        </a>
+        <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="search"></label>
+            <input class="field" type="text" placeholder="Поиск по сайту" id="search" name="search">
+        </form>
+        <a class="navigation-link" href="#">Войти</a>
+        <ul class="navigation-list">
           <li class="navigation-items">
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
@@ -41,18 +42,32 @@
     <main class="main-index">
       <h1 class="visually-hidden">device</h1>
       <section class="gallery">
-        <img class="slider-image" src="#" alt="Квадрокоптер" >
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
+        <h2 class="visually-hidden">slider</h2>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
               <span class="visually-hidden">1 фото</span>
             </button>
+            <img class="slide-logo1-img" src="#" alt="Квадрокоптер">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+            <p class="slide-item">Порхает как бабочка, жалит как пчела!</p>
+            <p class="slide-description">Этот обычный, на первый взгляд квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру</p>
+            <p class="slide-about">Подробнее</p>
+            <ul class="slide-list">
+              <li class="slide-feature">
+                <h3 class="slide-title">800 м</h3>
+                <p class="slide-title-description">Дальность полета</p>
+              </li>
+              <li class="slide-feature">
+                <h3 class="slide-title">50 м</h3>
+                <p class="slide-title-description">Радиус поражения</p>
+              </li>
+            </ul>
           </li>
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
@@ -66,22 +81,7 @@
           </li>
           </ol>
       </section>
-      <section class="slide-1">
-        <img class="slide-logo" src="#" alt="">
-        <h2 class="slide-item">Порхает как бабочка, жалит как пчела!</h2>
-        <p class="slide-description">Этот обычный, на первый взгляд квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру</p>
-        <p class="slide-about">Подробнее</p>
-        <ul class="slide-list">
-          <li class="slide-feature">
-            <h3 class="slide-title">800 м</h3>
-            <p class="slide-title-description">Дальность полета</p>
-          </li>
-          <li class="slide-feature">
-            <h3 class="slide-title">50 м</h3>
-            <p class="slide-title-description">Радиус поражения</p>
-          </li>
-        </ul>
-      </section>
+      
       <nav class="category">
         <ul class="category-list">
           <li class="category-item">
@@ -172,12 +172,14 @@
         <input type="text" id="e-mail" name="e-mail">
         </form>
         <a class="button button-all" href="#">Подписаться</a>
-        <img class="mailing-symbol" src="#" alt="v">
         <p class="mailing-text">Это бесплатно</p>
       </section>
     </main>
     <footer class="page-footer">
-        <h2 class="footer">Device</h2>
+        <h2 class="visually-hidden">Device</h2>
+        <a class="footer" href="index.html">
+          <img class="footer-index" src="#" alt="device">
+        </a>
         <p class="footer-adress">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
         <section class="footer-menu">
           <ul class="page-footer-menu">
@@ -192,24 +194,26 @@
           </ul>  
           <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="button" href="#">
+                <a class="button" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Facebook</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button" href="#">
+                <a class="button" href="https://www.instagram.com/htmlacademy/">
                   <span class="visually-hidden">Instagram</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button" href="#">
-                  <span class="visually-hidden">Tvitter</span>
+                <a class="button" href="https://www.twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden">Twitter</span>
                 </a>
               </li>
           </ul>        
         </section>
         <a class="footer-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
-        <img class="footer-logo" src="#" alt="html academy">
+        <a class="footer-logo" href="https://htmlacademy.ru/">
+          <img class="footer-logo-main" src="#" alt="html academy">
+        </a>
     </footer>
    </body>
 </html>
