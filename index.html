@@ -64,10 +64,16 @@
             <div>
               <img class="visually-hidden slide-logo2-img" src="#" alt="Квадрокоптер">
             </div>
+            <div>
+              <p class="visually-hidden slide-item"></p>
+            </div>
           </li>
           <li class="slider-pagination-item">
             <div>
               <img class="visually-hidden slide-logo3-img" src="#" alt="Квадрокоптер">
+            </div>
+            <div>
+              <p class="visually-hidden slide-item"></p>
             </div>
           </li>
         </ol>
@@ -143,9 +149,17 @@
               <span class="slider-button">Кредит</span></button>
         </div>  
       </section>
+      <!--Просто скопировал код-->
       <section class="delive">
-        <h3 class="delive-title">Доставим редкий товар под заказ</h3>
+        <a href="#openModal">Открыть модальное окно</a>
+        <div id="openModal" class="modalDialog">
+          <div>
+            <a href="#close" title="Закрыть" class="close">X</a>
+            <h2 class="delive-title" href="#">Доставим редкий товар под заказ</h2>
+          </div>
+        </div>  
       </section>
+      <!--Просто скопировал код-->
       <section class="about">
         <h2 class="about-title">О нас</h2>
         <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -182,7 +196,7 @@
         <p class="mailing-text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
-        <input type="email" id="e-mail" name="e-mail">
+        <input type="email" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
         </form>
         <button class="button" type="submit">Подписаться</button>
         <p class="mailing-text">Это бесплатно</p>
