@@ -33,3 +33,104 @@ body {
     color: #444444;
     background-color: #FFFFFF;
 }
+.page-header {
+    color: #000000;
+    background-color: #FFE17F;
+}
+.navigation-link {
+    line-height: 19px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+}
+.navigation-link-menu {
+    font-family: "Raleway", sans-serif;
+    line-height: 21px;
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-decoration: none;
+}
+.slide-item {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+.slide-description {
+    font-weight: normal;
+    line-height: 30px;
+}
+.slide-about {
+    font-family: "Raleway";
+    font-weight: 800;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #FFE17F;
+}
+.slide-title {
+    font-weight: normal;
+    font-size: 36px;
+    color: #000000;
+}
+.slide-title-description {
+    font-weight: normal;
+    font-size: 16px;
+}
+.category-logo {
+    background: #FFE17F;
+    width: 160px;
+    height: 160px;
+}
+.category-buton {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+.services {
+    background: #F0F0F0;
+    color: black;
+    width: 1440px;
+    height: 288px;
+}
+.services-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+.slider-button {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+.delive {
+    color: #000000;
+    background-color: #F0F0F0;
+}
+.delive-item {
+      
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000; 
+    text-transform: uppercase;
+    text-decoration: none;
+}
