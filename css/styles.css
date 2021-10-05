@@ -60,7 +60,7 @@ body {
 
 .navigation-link-person {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
@@ -74,6 +74,7 @@ body {
     text-transform: uppercase;
     font-weight: 800;
     text-decoration: none;
+    letter-spacing: 0.2em;
 }
 
 .slide-item {
@@ -85,29 +86,30 @@ body {
 }
 
 .slide-description {
-    font-weight: normal;
+    font-weight: 400;
     line-height: 30px;
 }
 
 .slide-about {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
     line-height: 21px;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
     text-decoration: none;
-    background: #FFE17F;
+    background-color: #FFE17F;
+    letter-spacing: 0.2em;
 }
 
 .slide-title {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 36px;
     color: #000000;
 }
 
 .slide-title-description {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
 }
 
@@ -126,7 +128,7 @@ body {
 }
 
 .services {
-    background: #F0F0F0;
+    background-color: #F0F0F0;
     color: #000000;
 }
 
@@ -175,7 +177,7 @@ body {
 
 .about-company {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 20px;
     color: #000000;
 }
@@ -189,7 +191,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
-    background: #FFE17F;
+    background-color: #FFE17F;
 }
 
 .contact-title {
@@ -203,7 +205,7 @@ body {
 
 .contact-subtitle {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     color: #444444;
@@ -211,7 +213,7 @@ body {
 
 .contacts-phone {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     text-decoration-line: underline;
     color: #444444;
 }
@@ -251,7 +253,7 @@ body {
 
 .breadcrumbs-link {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
@@ -270,14 +272,14 @@ body {
 
 .catalog-filter-title {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     color: #000000;
     line-height: 20px;
 }
 
 .catalog-filter-label {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 15px;
     line-height: 18px;
     color: #000000;
@@ -286,7 +288,7 @@ body {
 
 .control-label {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
@@ -301,7 +303,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
-    background: #FFC700;
+    background-color: #FFC700;
 }
 
 .catalog-sorting-name {
@@ -316,7 +318,7 @@ body {
 
 .select-control {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
@@ -331,12 +333,12 @@ body {
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
-    background: #FFC700;
+    background-color: #FFC700;
 }
 
 .product-card-title {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
@@ -345,7 +347,7 @@ body {
 
 .product-card-price {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 21px;
     text-align: right;
 }
@@ -363,7 +365,7 @@ body {
 }
 
 .button-pagination-link {
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -376,7 +378,7 @@ body {
 
 .pagination-link {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -391,7 +393,7 @@ body {
 
 .footer-adress {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 19px;
     color: #FFFFFF;
 }
@@ -410,7 +412,7 @@ body {
 
 .footer-phone {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     text-align: right;
     color: #FFFFFF;
