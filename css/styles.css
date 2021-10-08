@@ -362,7 +362,17 @@ body {
     color: #000000;
     text-decoration: none;
 }
-
+.catalog-product {
+    display: flex;
+}
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+}
+.catalog-right-column {
+    width: 980px;
+}
 .catalog-filter-name {
     font-family: "Raleway", sans-serif;
     font-style: normal;
