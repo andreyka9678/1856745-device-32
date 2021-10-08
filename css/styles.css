@@ -30,7 +30,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -38,16 +46,33 @@ body {
     background-color: #FFFFFF;
 }
 
-.page-header {
-    color: #000000;
-    background-color: #FFE17F;
-}
-
 .field {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+}
+
+.navigation {
+    color: #000000;
+    background-color: #FFE17F;
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+    margin: 0 140px;
+}
+
+.up-menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 60px;
+}
+
+.down-menu-navigation-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0 60px;
 }
 
 .navigation-link {
@@ -75,6 +100,25 @@ body {
     font-weight: 800;
     text-decoration: none;
     letter-spacing: 0.2em;
+}
+
+.page-container {
+    flex-grow: 1;
+    padding: 0 140px;
+}
+
+.slider-pagination-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 140px;
+}
+
+.slide-logo-img {
+    width: 560px;
+}
+
+.slide-info {
+    width: 560px;
 }
 
 .slide-item {
@@ -113,6 +157,16 @@ body {
     font-size: 16px;
 }
 
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.category-item {
+    width: 160px;
+}
+
 .category-logo {
     color: #444444;
     background: #FFE17F;
@@ -127,12 +181,26 @@ body {
     text-decoration: none;
 }
 
-.services {
+.services-section {
     background-color: #F0F0F0;
-    color: #000000;
+    color: #d1cccc;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 140px;
+}
+
+.services-button {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
 }
 
 .services-title {
+    width: 280px;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;
@@ -166,6 +234,15 @@ body {
     text-decoration: none;
 }
 
+.about-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    width: 560px;
+}
+
 .about-title {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -192,6 +269,10 @@ body {
     text-transform: uppercase;
     color: #000000;
     background-color: #FFE17F;
+}
+
+.contact {
+    width: 560px;
 }
 
 .contact-title {
@@ -223,6 +304,23 @@ body {
     background: #F0F0F0;
 }
 
+.mailing-up {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 140px;
+}
+
+.mailing-text {
+    width: 560px;
+    padding-right: 140px;
+}
+
+.mailing-down {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 140px;
+}
+
 .mailing-title {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -230,6 +328,11 @@ body {
     font-size: 50px;
     line-height: 50px;
     color: #000000;
+    width: 560px;
+}
+
+.mailing-form {
+    width: 560px;
 }
 
 .button-email {
@@ -391,11 +494,17 @@ body {
     color: #FFFFFF;
 }
 
+.page-footer-container {
+    display: flex;
+    padding: 0 140px;
+}
+
 .footer-adress {
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
     color: #FFFFFF;
+    width: 240px;
 }
 
 .page-footer .button-button-all {
@@ -416,4 +525,19 @@ body {
     font-size: 16px;
     text-align: right;
     color: #FFFFFF;
+    width: 300px;
+}
+
+.footer-adress {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-footer-menu {
+    display: flex;
+    width: 450px;
+}
+
+.footer-social-list {
+    display: flex;
 }
