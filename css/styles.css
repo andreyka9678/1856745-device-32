@@ -38,6 +38,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    min-width: 1440px;
     min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
@@ -56,22 +57,19 @@ body {
 .navigation {
     color: #000000;
     background-color: #FFE17F;
-    display: flex;
-    flex-direction: column;
     width: 1160px;
-    margin: 0 140px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .up-menu {
     display: flex;
-    flex-direction: row;
-    margin: 0;
     padding-left: 60px;
+    padding-right: 25px;
 }
 
 .down-menu-navigation-list {
     display: flex;
-    flex-direction: row;
     padding: 0 60px;
 }
 
@@ -103,8 +101,9 @@ body {
 }
 
 .page-container {
-    flex-grow: 1;
-    padding: 0 140px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1140px;
 }
 
 .slider-pagination-item {
@@ -183,12 +182,13 @@ body {
 
 .services-section {
     background-color: #F0F0F0;
-    color: #d1cccc;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1440px;
 }
 
 .services {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 0 140px;
 }
@@ -236,7 +236,6 @@ body {
 
 .about-contact {
     display: flex;
-    flex-direction: row;
 }
 
 .about {
@@ -302,6 +301,9 @@ body {
 .mailing {
     color: #444444;
     background: #F0F0F0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1440px;
 }
 
 .mailing-up {
@@ -366,8 +368,6 @@ body {
     display: flex;
 }
 .filter {
-    display: flex;
-    flex-direction: column;
     width: 470px;
 }
 .catalog-right-column {
@@ -502,6 +502,9 @@ body {
 .page-footer {
     background: #444444;
     color: #FFFFFF;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1440px;
 }
 
 .page-footer-container {
@@ -536,11 +539,6 @@ body {
     text-align: right;
     color: #FFFFFF;
     width: 300px;
-}
-
-.footer-adress {
-    display: flex;
-    flex-direction: column;
 }
 
 .page-footer-menu {
