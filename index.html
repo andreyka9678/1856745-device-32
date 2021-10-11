@@ -9,41 +9,43 @@
 
 <body>
   <header class="page-header">
-    <nav class="navigation">
-      <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" src="img/logo.svg" width="145" height="36" alt="device">
-      </a>
-      <div class="up-menu">
-        <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="search"></label>
-          <input class="field" type="search" placeholder="Поиск по сайту" id="search" name="search">
-        </form>
-        <a class="navigation-link" href="#">Войти</a>
-        <ul class="up-menu-navigation-list">
+    <div class="page-container">
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" src="img/logo.svg" width="145" height="36" alt="device">
+        </a>
+        <div class="up-menu">
+          <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="search"></label>
+            <input class="field" type="search" placeholder="Поиск по сайту" id="search" name="search">
+          </form>
+          <a class="navigation-link" href="#">Войти</a>
+          <ul class="up-menu-navigation-list">
+            <li class="navigation-items">
+              <a class="navigation-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-items">
+              <a class="navigation-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="down-menu-navigation-list">
           <li class="navigation-items">
-            <a class="navigation-link" href="#">Сравнить</a>
+            <a class="navigation-link-menu" href="#">Каталог товаров</a>
+            <button class="button" type="button"></button>
           </li>
           <li class="navigation-items">
-            <a class="navigation-link" href="#">Корзина</a>
+            <a class="navigation-link-menu" href="#">Доставка</a>
+          </li>
+          <li class="navigation-items">
+            <a class="navigation-link-menu" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-items">
+            <a class="navigation-link-menu" href="#">Контакты</a>
           </li>
         </ul>
-      </div>
-      <ul class="down-menu-navigation-list">
-        <li class="navigation-items">
-          <a class="navigation-link-menu" href="#">Каталог товаров</a>
-          <button class="button" type="button"></button>
-        </li>
-        <li class="navigation-items">
-          <a class="navigation-link-menu" href="#">Доставка</a>
-        </li>
-        <li class="navigation-items">
-          <a class="navigation-link-menu" href="#">Гарантия</a>
-        </li>
-        <li class="navigation-items">
-          <a class="navigation-link-menu" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main class="main-container main-index">
     <div class="page-container">
@@ -228,18 +230,21 @@
       </div>
     </div>
     <section class="mailing">
-      <div class="mailing-up">
-        <h2 class="mailing-title">Подпишитесь<br>на рассылку</h2>
-        <p class="mailing-text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а
-          также акции,<br>спецпредложения и вот это вот всё.</p>
-      </div>
-      <div class="mailing-down">
-        <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
-          <input type="email" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
-        </form>
-        <button class="button-email" type="submit">Подписаться</button>
-        <p class="mailing-text">Это бесплатно</p>
+      <div class="page-container">
+        <div class="mailing-up">
+          <h2 class="mailing-title">Подпишитесь<br>на рассылку</h2>
+          <p class="mailing-text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками,
+            а
+            также акции,<br>спецпредложения и вот это вот всё.</p>
+        </div>
+        <div class="mailing-down">
+          <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
+            <input type="email" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
+          </form>
+          <button class="button-email" type="submit">Подписаться</button>
+          <p class="mailing-text">Это бесплатно</p>
+        </div>
       </div>
     </section>
   </main>
