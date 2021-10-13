@@ -347,7 +347,7 @@ body {
     margin-left: auto;
     width: 1160px;
     padding-right: 140px;
-    padding-left: 200px;
+    padding-left: 140px;
 }
 
 .inner-header-title {
@@ -367,7 +367,6 @@ body {
     line-height: 19px;
     color: #000000;
     text-decoration: none;
-    padding: 0 200px;
 }
 
 .catalog-product {
@@ -376,15 +375,14 @@ body {
     margin-left: auto;
     width: 1160px;
     padding-right: 140px;
-    padding-left: 200px;
+    padding-left: 140px;
 }
 .product-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 .pagination {
     display: flex;
-    flex-direction: row;
 }
 .filter {
     width: 470px;
