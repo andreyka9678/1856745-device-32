@@ -6,7 +6,6 @@
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
   <header class="page-header">
     <div class="page-container">
@@ -19,7 +18,7 @@
             <label class="visually-hidden" for="search"></label>
             <input class="field" type="search" placeholder="Поиск по сайту" id="search" name="search">
           </form>
-          <a class="navigation-link" href="#">Войти</a>
+          <a class="navigation-link enter" href="#">Войти</a>
           <ul class="up-menu-navigation-list">
             <li class="navigation-items">
               <a class="navigation-link" href="#">Сравнить</a>
@@ -30,18 +29,18 @@
           </ul>
         </div>
         <ul class="down-menu-navigation-list">
-          <li class="navigation-items">
+          <li class="navigation-items catalog">
             <a class="navigation-link-menu" href="#">Каталог товаров</a>
             <button class="button" type="button"></button>
           </li>
-          <li class="navigation-items">
+          <li class="navigation-items delivery">
             <a class="navigation-link-menu" href="#">Доставка</a>
           </li>
           <li class="navigation-items">
-            <a class="navigation-link-menu" href="#">Гарантия</a>
+            <a class="navigation-link-menu guarantee" href="#">Гарантия</a>
           </li>
           <li class="navigation-items">
-            <a class="navigation-link-menu" href="#">Контакты</a>
+            <a class="navigation-link-menu contacts" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -63,10 +62,14 @@
                 замаскированным под стандартную камеру</p>
               <a class="category-logo" href="#">Подробнее</a>
               <dl class="slide-list">
-                <dt class="slide-title">800 м</dt>
-                <dd class="slide-title-description">Дальность полета</dd>
-                <dt class="slide-title">50 м</dt>
-                <dd class="slide-title-description">Радиус поражения</dd>
+                <div class="slide-title-about">
+                  <dt class="slide-title">800 м</dt>
+                  <dd class="slide-title-description">Дальность полета</dd>
+                </div>
+                <div class="slide-title-about">
+                  <dt class="slide-title">50 м</dt>
+                  <dd class="slide-title-description">Радиус поражения</dd>
+                </div>
               </dl>
             </div>
           </li>
@@ -80,8 +83,10 @@
                 занятия и соблюдать диету.</p>
               <a class="category-logo" href="#">Подробнее</a>
               <dl class="slide-list">
-                <dt class="slide-title">48 часов</dt>
-                <dd class="slide-title-description">Без подзарядки</dd>
+                <div class="slide-title-about">
+                  <dt class="slide-title">48 часов</dt>
+                  <dd class="slide-title-description">Без подзарядки</dd>
+                </div>
               </dl>
             </div>
           </li>
@@ -95,12 +100,18 @@
                 Карл!) метров длиной и весом всего 5 кг.</p>
               <a class="slide-about" href="#">Подробнее</a>
               <dl class="slide-list">
-                <dt class="slide-title">8,5 м</dt>
-                <dd class="slide-title-description">Длина палки</dd>
-                <dt class="slide-title">5 кг</dt>
-                <dd class="slide-title-description">Вес палки</dd>
-                <dt class="slide-title">Карбон</dt>
-                <dd class="slide-title-description">Материал</dd>
+                <div class="slide-title-about">
+                  <dt class="slide-title">8,5 м</dt>
+                  <dd class="slide-title-description">Длина палки</dd>
+                </div>
+                <div class="slide-title-about">
+                  <dt class="slide-title">5 кг</dt>
+                  <dd class="slide-title-description">Вес палки</dd>
+                </div>
+                <div class="slide-title-about">
+                  <dt class="slide-title">Карбон</dt>
+                  <dd class="slide-title-description">Материал</dd>
+                </div>
               </dl>
             </div>
           </li>
@@ -123,31 +134,27 @@
       <section class="category">
         <ul class="category-list">
           <li class="category-item">
-            <img class="category-logo" src="img/category/category-logo1.svg" width="97" height="55"
-              alt="Виртуальная реальность">
+            <div class="category-item-logo1"></div>
             <a class="category-buton" href="#">Виртуальная реальность</a>
           </li>
           <li class="category-item">
-            <img class="category-logo" src="img/category/category-logo2.svg" width="86" height="117"
-              alt="Моноподы для селфи">
+            <div class="category-item-logo2"></div>
             <a class="category-buton" href="catalog.html">Моноподы для селфи</a>
           </li>
           <li class="category-item">
-            <img class="category-logo" src="img/category/category-logo3.svg" width="71" height="87" alt="Экшн-камеры">
+            <div class="category-item-logo3"></div>
             <a class="category-buton" href="#">Экшн-камеры</a>
           </li>
           <li class="category-item">
-            <img class="category-logo" src="img/category/category-logo4.svg" width="107" height="65"
-              alt="Фитнес-браслеты">
+            <div class="category-item-logo4"></div>
             <a class="category-buton" href="#">Фитнес-браслеты</a>
           </li>
           <li class="category-item">
-            <img class="category-logo" src="img/category/category-logo5.svg" width="56" height="98" alt="Умные часы">
+            <div class="category-item-logo5"></div>
             <a class="category-buton" href="#">Умные часы</a>
           </li>
           <li class="category-item">
-            <img class="category-logo" src="img/category/category-logo6.svg" width="132" height="69"
-              alt="Квадрокоптеры">
+            <div class="category-item-logo6"></div>
             <a class="category-buton" href="#">Квадрокоптеры</a>
           </li>
         </ul>
@@ -295,5 +302,4 @@
     </div>
   </footer>
 </body>
-
 </html>
