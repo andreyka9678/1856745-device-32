@@ -32,17 +32,19 @@
         </div>
         <ul class="down-menu-navigation-list">
           <li class="navigation-items catalog">
-            <a class="navigation-link-menu" href="#">Каталог товаров</a>
-            <button class="button" type="button"></button>
+            <div class="navigation-link-button">
+              <a class="navigation-link-menu" href="#">Каталог товаров</a>
+              <button class="button" type="button"></button>
+            </div>
           </li>
           <li class="navigation-items delivery">
             <a class="navigation-link-menu" href="#">Доставка</a>
           </li>
           <li class="navigation-items">
-            <a class="navigation-link-menu" href="#">Гарантия</a>
+            <a class="navigation-link-menu guarantee" href="#">Гарантия</a>
           </li>
           <li class="navigation-items">
-            <a class="navigation-link-menu" href="#">Контакты</a>
+            <a class="navigation-link-menu contacts" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -232,10 +234,12 @@
   <footer class="page-footer">
     <h2 class="visually-hidden">Device</h2>
     <div class="page-footer-container">
-      <a class="footer" href="index.html">
-        <img class="footer-index" src="img/device.svg" width="145" height="36" alt="device">
-      </a>
-      <p class="footer-adress">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+      <section class="footer-address-logo">
+        <a class="footer-contact" href="index.html">
+          <img class="footer-index" src="img/device.svg" width="145" height="36" alt="device">
+        </a>
+        <p class="footer-adress">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+      </section>
       <section class="footer-menu">
         <ul class="page-footer-menu">
           <li class="page-footer-title">
@@ -269,10 +273,12 @@
           </li>
         </ul>
       </section>
-      <a class="footer-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
-      <a class="footer-logo" href="https://htmlacademy.ru/">
-        <img class="footer-logo-main" src="img/footer-logo.svg" width="115" height="33" alt="html academy">
-      </a>
+      <section class="footer-phone-logo">
+        <a class="footer-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="footer-logo" href="https://htmlacademy.ru/">
+          <img class="footer-logo-main" src="img/footer-logo.svg" width="115" height="33" alt="html academy">
+        </a>
+      </section>
     </div>
   </footer>
 </body>

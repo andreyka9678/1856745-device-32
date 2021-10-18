@@ -6,6 +6,7 @@
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <header class="page-header">
     <div class="page-container">
@@ -30,8 +31,10 @@
         </div>
         <ul class="down-menu-navigation-list">
           <li class="navigation-items catalog">
-            <a class="navigation-link-menu" href="#">Каталог товаров</a>
-            <button class="button" type="button"></button>
+            <div class="navigation-link-button">
+              <a class="navigation-link-menu" href="#">Каталог товаров</a>
+              <button class="button" type="button"></button>
+            </div>
           </li>
           <li class="navigation-items delivery">
             <a class="navigation-link-menu" href="#">Доставка</a>
@@ -60,7 +63,7 @@
               <p class="slide-item">Порхает как бабочка,<br> жалит как пчела!</p>
               <p class="slide-description">Этот обычный, на первый взгляд квадрокоптер оснащен<br> мощным лазером,
                 замаскированным под стандартную камеру</p>
-              <a class="category-logo" href="#">Подробнее</a>
+              <a class="slide-about" href="#">Подробнее</a>
               <dl class="slide-list">
                 <div class="slide-title-about">
                   <dt class="slide-title">800 м</dt>
@@ -81,7 +84,7 @@
               <p class="slide-item">Худеем правильно!</p>
               <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать
                 занятия и соблюдать диету.</p>
-              <a class="category-logo" href="#">Подробнее</a>
+              <a class="slide-about" href="#">Подробнее</a>
               <dl class="slide-list">
                 <div class="slide-title-about">
                   <dt class="slide-title">48 часов</dt>
@@ -236,32 +239,37 @@
         </section>
       </div>
     </div>
-    <section class="mailing">
-      <div class="page-container">
-        <div class="mailing-up">
-          <h2 class="mailing-title">Подпишитесь<br>на рассылку</h2>
-          <p class="mailing-text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками,
-            а
-            также акции,<br>спецпредложения и вот это вот всё.</p>
+    <div class="mail">
+      <section class="mailing">
+        <div class="mailing-container">
+          <div class="mailing-up">
+            <h2 class="mailing-title">Подпишитесь<br>на рассылку</h2>
+            <p class="mailing-text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
+              распаковками,
+              а
+              также акции,<br>спецпредложения и вот это вот всё.</p>
+          </div>
+          <div class="mailing-down">
+            <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
+              <input type="email" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
+            </form>
+            <button class="button-email" type="submit">Подписаться</button>
+            <p class="mailing-text">Это бесплатно</p>
+          </div>
         </div>
-        <div class="mailing-down">
-          <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
-            <input type="email" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
-          </form>
-          <button class="button-email" type="submit">Подписаться</button>
-          <p class="mailing-text">Это бесплатно</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <footer class="page-footer">
     <h2 class="visually-hidden">Device</h2>
     <div class="page-footer-container">
-      <a class="footer" href="index.html">
-        <img class="footer-index" src="img/device.svg" width="145" height="36" alt="device">
-      </a>
-      <p class="footer-adress">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+      <section class="footer-address-logo">
+        <a class="footer-contact" href="index.html">
+          <img class="footer-index" src="img/device.svg" width="145" height="36" alt="device">
+        </a>
+        <p class="footer-adress">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+      </section>
       <section class="footer-menu">
         <ul class="page-footer-menu">
           <li class="page-footer-title">
@@ -295,11 +303,14 @@
           </li>
         </ul>
       </section>
-      <a class="footer-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
-      <a class="footer-logo" href="https://htmlacademy.ru/">
-        <img class="footer-logo-main" src="img/footer-logo.svg" width="115" height="33" alt="html academy">
-      </a>
+      <section class="footer-phone-logo">
+        <a class="footer-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="footer-logo" href="https://htmlacademy.ru/">
+          <img class="footer-logo-main" src="img/footer-logo.svg" width="115" height="33" alt="html academy">
+        </a>
+      </section>
     </div>
   </footer>
 </body>
+
 </html>
