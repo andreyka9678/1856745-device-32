@@ -47,7 +47,7 @@ body {
     background-color: #FFFFFF;
 }
 
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -56,7 +56,7 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
 
 .field {
     font-family: "Rubik", sans-serif;
@@ -68,6 +68,7 @@ body {
 .navigation {
     color: #000000;
     background-color: #FFE17F;
+    margin-top: 40px;
 }
 
 .up-menu {
@@ -75,25 +76,28 @@ body {
     align-items: center;
     padding-left: 60px;
     padding-right: 60px;
-    
 }
 
 .up-menu-navigation-list {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
-    
+    padding-left: 0;
+}
+
+.navigation-logo {
+    display: block;
+    width: 145px;
+    height: 36px;
 }
 
 .navigation-link {
-    display: block;
     line-height: 19px;
     font-size: 16px;
     color: #000000;
     font-weight: 400;
     text-decoration: none;
     margin: auto;
-    
 }
 
 .navigation-link-button {
@@ -121,22 +125,13 @@ body {
     text-decoration: none;
     letter-spacing: 0.2em;
     display: block;
-    min-width: 140px;
-    min-height: 20px;
     margin-top: 44px;
-    margin-bottom: 170px;
-   
+    margin-bottom: 17px;
 }
 
 .navigation-form {
-    min-width: 480px;
-    min-height: 20px;
-    
-}
-
-.up-menu .enter {
-    min-width: 220px;
-    min-height: 20px;
+    width: 480px;
+    height: 20px;
 }
 
 .up-menu .navigation-items {
@@ -149,6 +144,7 @@ body {
     padding: 0 60px;
     list-style-type: none;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .catalog .navigation-link-menu {
@@ -178,7 +174,7 @@ body {
 }
 
 .gallery {
-    margin-top: -150px;
+    /* margin-top: -150px; */
 }
 
 .page-container {
@@ -189,9 +185,15 @@ body {
     padding-left: 140px;
 }
 
+.slider-pagination {
+    padding-left: 0;
+    margin: 0;
+}
+
 .slider-pagination-item {
     display: flex;
     justify-content: space-between;
+    background: linear-gradient(#FFE17F, 26%, #FFFFFF 26%);
 }
 
 .slide-logo-img {
@@ -256,7 +258,6 @@ body {
 
 .category-list {
     display: flex;
-    justify-content: space-between;
     margin: 0px;
     padding: 0px;
     list-style-type: none;
@@ -384,16 +385,13 @@ body {
 
 .services-list {
     list-style-type: none;
-}
-
-.delive {
-    background: #F0F0F0;
-    min-width: 1160px;
-    min-height: 100px;
-    margin-top: 90px;
+    padding-left: 0;
 }
 
 .delive-item {
+    background: #F0F0F0;
+    min-width: 1160px;
+    margin-top: 90px;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 20px;
@@ -402,9 +400,10 @@ body {
     color: #000000;
     text-transform: uppercase;
     text-decoration: none;
+    padding-top: 37px;
+    padding-bottom: 41px;
     text-align: center;
     display: block;
-    padding-top: 37px;
 }
 
 .about-contact {
@@ -558,10 +557,19 @@ body {
     line-height: 50px;
     color: #000000;
     width: 560px;
+    margin: 37px 0 0 60px;
 }
 
 .breadcrumbs {
     list-style-type: none;
+    display: flex;
+    margin-left: 60px;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.breadcrumbs-item {
+    margin-right: 36px;
 }
 
 .breadcrumbs-link {
@@ -586,15 +594,23 @@ body {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    margin: 70px 0px 45px 70px;
+    padding: 0;
 }
 
 .pagination {
     display: flex;
     list-style-type: none;
+    margin-left: 70px;
+  padding: 0;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .filter {
-    width: 470px;
+    width: 330px;
+    margin-left: 60px;
 }
 
 .catalog-right-column {
@@ -651,6 +667,21 @@ body {
     background-color: #FFC700;
 }
 
+.sorting-container {
+    display: flex;
+    color: black;
+    margin: 25px 0px 25px 75px;
+}
+
+.sorting-type {
+    margin-right: auto;
+}
+
+.sorting-container .button {
+    width: 11px;
+    height: 11px;
+}
+
 .catalog-sorting-name {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -667,6 +698,10 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+}
+
+.product-card {
+    margin-bottom: 44px;
 }
 
 .product-card-button {
@@ -707,6 +742,14 @@ body {
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
+    width: 760px;
+    height: 55px;
+    margin-left: 70px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+
 }
 
 .button-pagination-link {
@@ -787,6 +830,7 @@ body {
     list-style-type: none;
     margin-top: 135px;
     margin-left: 115px;
+    padding-left: 0;
 }
 
 .footer-social-list {
