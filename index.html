@@ -165,38 +165,54 @@
     </div>
     <div class="services-section">
       <section class="services">
-        <div class="services-button">
-          <button class="slider-pagination-button slider-pagination-button-current" type="button">
-            <span class="slider-button">Доставка</span></button>
-          <button class="slider-pagination-button" type="button">
-            <span class="slider-button">Гарантия</span></button>
-          <button class="slider-pagination-button" type="button">
-            <span class="slider-button">Кредит</span></button>
-        </div>
-        <ul class="services-list">
-          <li class="services-item">
-            <div>
+        <ol class="services-pagination">
+          <li class="services-pagination-item">
+            <div class="services-button">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="slider-button">Доставка</span></button>
+              <button class="slider-pagination-button" type="button">
+                <span class="slider-button">Гарантия</span></button>
+              <button class="slider-pagination-button" type="button">
+                <span class="slider-button">Кредит</span></button>
+            </div>
+            <div class="services-item">
               <h3 class="services-title">Доставка</h3>
               <p class="services-description">Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно! Ведь<br>
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
           </li>
-          <li class="services-item">
-            <div>
+          <li class="services-pagination-item">
+            <div class="services-button">
+              <button class="slider-pagination-button" type="button">
+                <span class="slider-button">Доставка</span></button>
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="slider-button">Гарантия</span></button>
+              <button class="slider-pagination-button" type="button">
+                <span class="slider-button">Кредит</span></button>
+            </div>
+            <div class="services-item">
               <h3 class="services-title">Гарантия</h3>
               <p class="services-description">Если из-за возгорания купленного у нас товара у вас<br>сгорит дом — не
                 переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
             </div>
           </li>
-          <li class="services-item">
-            <div>
+          <li class="services-pagination-item">
+            <div class="services-button">
+              <button class="slider-pagination-button" type="button">
+                <span class="slider-button">Доставка</span></button>
+              <button class="slider-pagination-button" type="button">
+                <span class="slider-button">Гарантия</span></button>
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="slider-button">Кредит</span></button>
+            </div>
+            <div class="services-item">
               <h3 class="services-title">Кредит</h3>
               <p class="services-description">Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут
                 для вас наиболее выгодные<br> условия кредита. Выгодные для банка, разумеется.</p>
             </div>
           </li>
-        </ul>
+        </ol>
       </section>
     </div>
     <div class="page-container">
@@ -239,21 +255,17 @@
     </div>
     <div class="mail">
       <section class="mailing">
-        <div class="mailing-up">
-          <h2 class="mailing-title">Подпишитесь<br>на рассылку</h2>
-          <p class="mailing-text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
-            распаковками,
-            а
-            также акции,<br>спецпредложения и вот это вот всё.</p>
-        </div>
-        <div class="mailing-down">
-          <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
-            <input type="email" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
-          </form>
-          <button class="button-email" type="submit">Подписаться</button>
-          <p class="mailing-text">Это бесплатно</p>
-        </div>
+        <h2 class="mailing-title">Подпишитесь<br>на рассылку</h2>
+        <p class="mailing-text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
+          распаковками,
+          а
+          также акции,<br>спецпредложения и вот это вот всё.</p>
+        <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
+          <input type="email" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
+        </form>
+        <button class="button-email" type="submit">Подписаться</button>
+        <p class="mailing-text-button">Это бесплатно</p>
       </section>
     </div>
   </main>
