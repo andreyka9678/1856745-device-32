@@ -67,7 +67,7 @@ body {
 
 .navigation {
     color: #000000;
-    background: linear-gradient( #FFFFFF, 12%, #FFE17F 12%);
+    background: linear-gradient( #FFFFFF, 23px, #FFE17F 23px);
     margin-top: 40px;
 }
 
@@ -224,7 +224,7 @@ body {
     color: #000000;
     text-transform: uppercase;
     text-decoration: none;
-    background: linear-gradient(#FFFFFF, 30%, #FFE17F 30%, 70%, #FFFFFF 70%);
+    background: linear-gradient(#FFFFFF, 6px, #FFE17F 6px, 14px, #FFFFFF 14px);
     letter-spacing: 0.2em;
     width: 220px;
     display: block;
@@ -343,24 +343,28 @@ body {
 
 .services {
     margin-top: 70px;
-    background: linear-gradient(#FFFFFF, 26%, #F0F0F0 26%);
+    background: linear-gradient(#FFFFFF, 117px, #F0F0F0 117px);
 }
 
-.services-pagination {
+.services-container {
     padding: 0 140px;
     width: 1160px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 }
 
-.services-pagination-item {
-    display: flex;
+.services-list {
+    padding: 0px;
 }
 
 .services-button {
     width: 280px;
     margin-top: 80px;
     margin-bottom: 150px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .services-title {
@@ -379,20 +383,9 @@ body {
     margin-top: 14px;
 }
 
-.slider-pagination-button {
+.slider-services-button {
     border: none;
     margin-bottom: 45px;
-}
-
-.slider-pagination-button:last-child {
-    margin-bottom: 0px;
-}
-
-button {
-    background: transparent;
-}
-
-.slider-button {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -401,15 +394,22 @@ button {
     text-align: center;
     color: #000000;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
     display: block;
     width: 160px;
     height: 20px;
+    background: transparent linear-gradient(#FFFFFF, 6px, #FFE17F 6px, 14px, #FFFFFF 14px);
+}
+
+.slider-services-button:last-child {
+    margin-bottom: 0px;
 }
 
 .services-item {
     padding-left: 0;
     margin-top: 70px;
     margin-left: 120px;
+    list-style-type: none;
 }
 
 .delive-item {
@@ -471,7 +471,7 @@ button {
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
-    background: linear-gradient(#FFFFFF, 30%, #FFE17F 30%, 70%, #FFFFFF 70%);
+    background: linear-gradient(#FFFFFF, 6px, #FFE17F 6px, 14px, #FFFFFF 14px);
     display: block;
     margin-top: auto;
     letter-spacing: 0.2em;
@@ -799,11 +799,12 @@ button {
 
 .pagination-list {
     padding: 0px;
+    display: flex;
 }
 
 .pagination-item {
-    display: inline;
     margin-right: 28px;
+    list-style-type: none;
 }
 
 .pagination-item:last-child {
