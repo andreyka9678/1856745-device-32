@@ -106,22 +106,31 @@
       <div class="catalog-sorting">
         <div class="catalog-container">
           <div class="header-container">
-            <h2 class="catalog-name">Фильтр:</h2>
+            <h2 class="catalog-header">Фильтр:</h2>
           </div>
           <div class="sorting-container">
             <form class="sorting-type">
-              <label class="catalog-name" for="sorting">Сортировка:</label>
-              <select class="select-control" id="sorting" name="sorting">
-                <option value="popular">Сначала популярное</option>
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="expensive">Сначала дорогое</option>
-              </select>
+              <h2 class="catalog-name">Сортировка:</h2>
+              <div class="select">
+                <label class="visually-hidden" for="sorting">Сортировка:</label>
+                <select class="select-control" id="sorting" name="sorting">
+                  <option value="popular">Сначала популярное</option>
+                  <option value="cheap">Сначала дешёвое</option>
+                  <option value="expensive">Сначала дорогое</option>
+                </select>
+              </div>
               <button class="visually-hidden" type="submit">Отсортировать продукты</button>
             </form>
-            <a href="#" class="button button-light">
+            <a href="#" class="sort-toggle" type="button">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L11 10H0" fill="black" />
+              </svg>
               <span class="visually-hidden">Вверх</span>
             </a>
-            <a href="#" class="button">
+            <a href="#" class="sort-toggle sort-toggle-current" type="button">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" fill="black" />
+              </svg>
               <span class="visually-hidden">Вниз</span>
             </a>
           </div>
@@ -133,18 +142,26 @@
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
-                <button class="range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
-                <label class="catalog-filter-label">
-                  от <input class="catalog-filter-input" type="number" name="min-price">
-                </label>
-                <label class="catalog-filter-label">
-                  до <input class="catalog-filter-input" type="number" name="max-price">
-                </label>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0px; width: 110px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input" type="number" value="5000" name="max-price">
+                    </label>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
