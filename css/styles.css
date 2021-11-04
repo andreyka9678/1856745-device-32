@@ -310,7 +310,11 @@ input {
     border-radius: 20px;
     opacity: 1;
 }
-
+.navigation-form input:not(:placeholder-shown):focus-within {
+    box-shadow: 0 0 0 2px #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
 .search-button {
     visibility: hidden;
     background-color: transparent;
