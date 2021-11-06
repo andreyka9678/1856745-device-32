@@ -18,7 +18,8 @@
         <div class="up-menu">
           <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="search"></label>
-            <input class="field" type="search" placeholder="Поиск по сайту" id="search" name="search" autocomplete="off">
+            <input class="field" type="search" placeholder="Поиск по сайту" id="search" name="search"
+              autocomplete="off">
             <button class="search-button" type="submit">Найти</button>
           </form>
           <ul class="up-menu-navigation-list">
@@ -32,6 +33,43 @@
             </li>
             <li class="navigation-items">
               <a class="navigation-link basket" href="#">Корзина</a>
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <ul class="cart-item-list">
+                    <li class="cart-item">
+                      <img class="cart-item-logo" src="img/catalog/product1.jpg" width="41" height="43"
+                        alt="Любительская селфи-палка">
+                      <p class="cart-item-title">Любительская селфи-палка</p>
+                      <button type="button" class="cart-item-button">
+                        <svg class="cart-close" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z"
+                            fill="white" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <img class="cart-item-logo" src="img/catalog/product2.jpg" width="41" height="43"
+                        alt="Любительская селфи-палка">
+                      <p class="cart-item-title">Профессиональная селфи-палка</p>
+                      <button type="button" class="cart-item-button">
+                        <svg class="cart-close" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z"
+                            fill="white" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="cart-summary">
+                    <p class="cart-summary-item">Товаров: 2</p>
+                    <p class="cart-summary-item">Сумма: 2000 ₽</p>
+                  </div>
+                  <a class="cart-summary-link" href="#">Открыть корзину</a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -93,10 +131,26 @@
       <h1 class="visually-hidden">device</h1>
       <section class="gallery">
         <h2 class="visually-hidden">slider</h2>
-        <ol class="slider-pagination">
+        <ol class="slider-list">
           <li class="slider-pagination-item">
-            <div>
+            <div class="slide-logo">
               <img class="slide-logo-img" src="img/slider1.png" width="560" height="560" alt="Квадрокоптер">
+              <div class="slider-control">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущее фото</span>
+                  <svg class="slider-arrow" width="20" height="60" viewBox="0 0 20 60" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" />
+                  </svg>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующее фото</span>
+                  <svg class="slider-arrow" width="20" height="60" viewBox="0 0 20 60" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 60H3.5L20 30L3.5 0H0L16.2 30L0 60Z" />
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="slide-info">
               <span class="slide-indicator">01</span>
@@ -117,8 +171,24 @@
             </div>
           </li>
           <li class="slider-pagination-item fitnes">
-            <div>
+            <div class="slide-logo">
               <img class="slide-logo-img" src="img/slider2.png" width="560" height="560" alt="Фитнес-браслет">
+              <div class="slider-control">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущее фото</span>
+                  <svg class="slider-arrow" width="20" height="60" viewBox="0 0 20 60" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" />
+                  </svg>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующее фото</span>
+                  <svg class="slider-arrow" width="20" height="60" viewBox="0 0 20 60" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 60H3.5L20 30L3.5 0H0L16.2 30L0 60Z" />
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="slide-info">
               <p class="slide-item">Худеем правильно!</p>
@@ -134,8 +204,24 @@
             </div>
           </li>
           <li class="slider-pagination-item selfie">
-            <div>
+            <div class="slide-logo">
               <img class="slide-logo-img" src="img/slider3.png" width="560" height="560" alt="Селфи палка">
+              <div class="slider-control">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущее фото</span>
+                  <svg class="slider-arrow" width="20" height="60" viewBox="0 0 20 60" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" />
+                  </svg>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующее фото</span>
+                  <svg class="slider-arrow" width="20" height="60" viewBox="0 0 20 60" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 60H3.5L20 30L3.5 0H0L16.2 30L0 60Z" />
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="slide-info">
               <p class="slide-item">Делай селфи, как Бен Стиллер! </p>
@@ -159,13 +245,7 @@
             </div>
           </li>
         </ol>
-        <div>
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span></button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span></button>
-        </div>
-        <div>
+        <div class="slider-pagination">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
             <span class="visually-hidden">1 фото</span></button>
           <button class="slider-pagination-button" type="button">
@@ -392,6 +472,60 @@
       </div>
     </div>
   </footer>
+  <div class="modal-container">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <form class="delieve-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group name-mail">
+            <label class="input-text-label" for="delieve-name">Ваше имя:</label>
+            <input class="input-text-input user-name" type="text" id="delieve-name" name="delieve-name"
+              placeholder="Имя Фамилия">
+            <label class="input-text-under" for="delieve-name">Пожалуйста, представьтесь</label>
+          </div>
+          <div class="field-group name-mail">
+            <label class="input-text-label" for="delieve-mail">Ваш e-mail:</label>
+            <input class="input-text-input user-email" type="email" id="delieve-mail" name="delieve-mail"
+              placeholder="Введите e-mail">
+            <label class="input-text-under" for="delieve-mail">Забавный у вас адрес</label>
+          </div>
+          <div class="field-group delieve-item">
+            <label class="input-text-label" for="delieve-text">Что нужно привезти:</label>
+            <input class="input-text-input" type="text" id="delieve-text" name="delieve-text"
+              placeholder="В свободной форме">
+          </div>
+          <div class="field-group delieve-quantity">
+            <label class="input-text-label" for="delieve-pieces">Количество:<div class="label-item">
+              <div class="popover popover-modal">
+                <div class="popover-content-modal">
+                  <p class="modal-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+                  </div>
+                  </div>
+            </div></label>
+            <div class="quantity-minus-item">
+              <svg class="quantity-minus" width="16" height="2" viewBox="0 0 16 2" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 0H0V2H16V0Z"/>
+              </svg>
+            </div>
+            <input class="input-text-input quantity-number" type="number" id="delieve-pieces" name="delieve-pieces"
+              placeholder="1">
+            
+            <div class="quantity-plus-item">
+            <svg class="quantity-plus" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
+            </svg>
+          </div>
+          </div>
+          <button class="button-send" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
