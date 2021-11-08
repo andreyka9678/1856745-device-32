@@ -137,29 +137,35 @@ body {
     flex-grow: 1;
 }
 
-.navigation-items-down:focus-within .subcatalog {
+.navigation-items-down:focus-within .subcatalog-open {
     display: block;
 }
 
 .subcatalog {
-    display: none;
+    display: flex;
     list-style-type: none;
     position: absolute;
+    left: -60px;
+    top: 55px;
+    width: 1040px;
+    padding: 33px 60px 27px;
+    background: #FFE17F;
 }
-
+.subcatalog-open {
+    display: none;
+    z-index: 2;
+}
 .subcatalog-menu {
     list-style-type: none;
     min-width: 210px;
-    position: absolute;
-    left: 0px;
-    top: 50px;
+    
 }
 
 .subcatalog-menu-link {
     text-decoration: none;
     font-style: normal;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 40px;
     color: #000000;
 }
 
@@ -266,7 +272,9 @@ body {
     box-sizing: border-box;
     border-radius: 25px;
 }
-
+.menu-catalog:hover ~.subcatalog-open {
+display: block;
+}
 .navigation-form {
     width: 516px;
     height: 40px;
@@ -435,6 +443,10 @@ input {
 
 .basket:hover {
     opacity: 0.6;
+
+}
+.basket:hover ~.popover-cart {
+    display: inline-block;
 }
 
 .basket:focus {
@@ -449,7 +461,7 @@ input {
 
 .down-menu-navigation-list {
     display: flex;
-    padding: 0 60px;
+    padding: 0 60px 38px;
     list-style-type: none;
     flex-wrap: wrap;
     margin: 20px 0px 0px 0px;
@@ -466,7 +478,7 @@ input {
     margin-left: auto;
 }
 
-.popover {
+.popover-cart {
     position: absolute;
     top: 43px;
     right: -45px;
@@ -709,13 +721,10 @@ input {
     padding: 0;
     width: 12px;
     height: 12px;
-    border: 0;
-    border-radius: 50%;
-    background-color: transparent;
     cursor: pointer;
-    box-shadow: 0 0 0 2px #000000;
-    box-sizing: border-box;
+    border: 2px solid #000000;
     border-radius: 6px;
+    box-sizing: border-box;
 }
 
 .slider-pagination-button:hover {
@@ -2228,9 +2237,9 @@ input#e-mail:invalid {
     background-color: rgba(229, 229, 229, 0.5);
 }
 
-/* .modal-container {
+.modal-container {
     display: none;
-  } */
+  }
   
 
 .modal {
@@ -2307,11 +2316,15 @@ input#e-mail:invalid {
 .input-text-input {
     padding: 15px 50px 15px 20px;
     background-color: #F0F0F0;
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     color: #000000;
     opacity: 0.6;
+    resize: none;
+    outline: none;
+    border: none;
 }
 
 .user-name {
@@ -2381,13 +2394,11 @@ input#e-mail:invalid {
 
 .quantity-number {
     text-align: center;
-    padding: 15px 50px;
+    padding: 15px 60px;
+    
     position: relative;
 }
 
-input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
-    display: none;
-}
 
 .quantity-minus-item {
     position: absolute;
@@ -2401,6 +2412,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     background-color: transparent;
     align-items: center;
     justify-content: center;
+    border: none;
 }
 
 .quantity-plus-item {
@@ -2415,6 +2427,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     background-color: transparent;
     align-items: center;
     justify-content: center;
+    border: none;
 }
 
 .quantity-minus, .quantity-plus {
@@ -2505,14 +2518,14 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     border-radius: 50%;
 }
 
-.label-item:hover .popover-modal {
+.label-item:hover ~.popover-modal {
     display: block;
 }
 
 .popover-modal {
     position: absolute;
     top: 35px;
-    right: -30px;
+    left: -20px;
     z-index: 2;
     box-sizing: border-box;
     width: 200px;
@@ -2521,6 +2534,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     min-height: 160px;
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
     display: none;
+    padding: 19px;
 }
 
 .popover-modal::after {
@@ -2535,10 +2549,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     right: 35px;
 }
 
-.popover-content-modal {
-    height: 100%;
-    padding: 19px;
-}
+
 
 .modal-text {
     font-weight: 400;

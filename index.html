@@ -79,38 +79,40 @@
               <a class="navigation-link-menu menu-catalog" href="catalog.html">Каталог товаров</a>
               <div class="navigation-link-menu-circle">
               </div>
-              <ul class="subcatalog">
-                <li class="subcatalog-column">
-                  <ul class="subcatalog-menu">
-                    <li class="subcatalog-menu-item">
-                      <a class="subcatalog-menu-link" href="#">Виртуальная реальность</a>
-                    </li>
-                    <li class="subcatalog-menu-item">
-                      <a class="subcatalog-menu-link" href="#">Моноподы для cелфи</a>
-                    </li>
-                    <li class="subcatalog-menu-item">
-                      <a class="subcatalog-menu-link" href="#">Экшн-камеры</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="subcatalog-column">
-                  <ul class="subcatalog-menu">
-                    <li class="subcatalog-menu-item">
-                      <a class="subcatalog-menu-link" href="#">Фитнес-браслеты</a>
-                    </li>
-                    <li class="subcatalog-menu-item">
-                      <a class="subcatalog-menu-link" href="#">Умные часы</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="subcatalog-column">
-                  <ul class="subcatalog-menu">
-                    <li class="subcatalog-menu-item">
-                      <a class="subcatalog-menu-link" href="#">Квадрокоптеры</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="subcatalog-open">
+                <ul class="subcatalog">
+                  <li class="subcatalog-column">
+                    <ul class="subcatalog-menu">
+                      <li class="subcatalog-menu-item">
+                        <a class="subcatalog-menu-link" href="#">Виртуальная реальность</a>
+                      </li>
+                      <li class="subcatalog-menu-item">
+                        <a class="subcatalog-menu-link" href="#">Моноподы для cелфи</a>
+                      </li>
+                      <li class="subcatalog-menu-item">
+                        <a class="subcatalog-menu-link" href="#">Экшн-камеры</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="subcatalog-column">
+                    <ul class="subcatalog-menu">
+                      <li class="subcatalog-menu-item">
+                        <a class="subcatalog-menu-link" href="#">Фитнес-браслеты</a>
+                      </li>
+                      <li class="subcatalog-menu-item">
+                        <a class="subcatalog-menu-link" href="#">Умные часы</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="subcatalog-column">
+                    <ul class="subcatalog-menu">
+                      <li class="subcatalog-menu-item">
+                        <a class="subcatalog-menu-link" href="#">Квадрокоптеры</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
           <li class="navigation-items-down">
@@ -474,7 +476,7 @@
   </footer>
   <div class="modal-container">
     <div class="modal modal-auth">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -484,42 +486,41 @@
             <label class="input-text-label" for="delieve-name">Ваше имя:</label>
             <input class="input-text-input user-name" type="text" id="delieve-name" name="delieve-name"
               placeholder="Имя Фамилия">
-            <label class="input-text-under" for="delieve-name">Пожалуйста, представьтесь</label>
+            <span class="input-text-under">Пожалуйста, представьтесь</span>
           </div>
           <div class="field-group name-mail">
             <label class="input-text-label" for="delieve-mail">Ваш e-mail:</label>
             <input class="input-text-input user-email" type="email" id="delieve-mail" name="delieve-mail"
               placeholder="Введите e-mail">
-            <label class="input-text-under" for="delieve-mail">Забавный у вас адрес</label>
+            <span class="input-text-under">Забавный у вас адрес</span>
           </div>
           <div class="field-group delieve-item">
-            <label class="input-text-label" for="delieve-text">Что нужно привезти:</label>
-            <input class="input-text-input" type="text" id="delieve-text" name="delieve-text"
-              placeholder="В свободной форме">
+            <label class="input-text-label">Что нужно привезти:</label>
+            <textarea class="input-text-input" rows="1" name="delieve-text" placeholder="В свободной форме"></textarea>
           </div>
           <div class="field-group delieve-quantity">
-            <label class="input-text-label" for="delieve-pieces">Количество:<div class="label-item">
-              <div class="popover popover-modal">
-                <div class="popover-content-modal">
-                  <p class="modal-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
-                  </div>
-                  </div>
-            </div></label>
-            <div class="quantity-minus-item">
+            <label class="input-text-label" for="delieve-pieces">Количество:
+            </label>
+            <div class="label-item">
+            </div>
+            <button class="quantity-minus-item" type="button">
               <svg class="quantity-minus" width="16" height="2" viewBox="0 0 16 2" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 0H0V2H16V0Z"/>
+                <path d="M16 0H0V2H16V0Z" />
               </svg>
-            </div>
+            </button>
             <input class="input-text-input quantity-number" type="number" id="delieve-pieces" name="delieve-pieces"
               placeholder="1">
-            
-            <div class="quantity-plus-item">
-            <svg class="quantity-plus" width="16" height="16" viewBox="0 0 16 16" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
-            </svg>
-          </div>
+            <button class="quantity-plus-item" type="button">
+              <svg class="quantity-plus" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" />
+              </svg>
+            </button>
+            <div class="popover popover-modal">
+              <p class="modal-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к
+                провозу багажа.</p>
+            </div>
           </div>
           <button class="button-send" type="submit">Отправить</button>
         </form>
