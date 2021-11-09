@@ -67,7 +67,7 @@ body {
 .navigation {
     color: #000000;
     background: linear-gradient( #FFFFFF, 23px, #FFE17F 23px);
-    margin-top: 40px;
+    
 }
 
 .up-menu {
@@ -278,12 +278,11 @@ display: block;
 .navigation-form {
     width: 516px;
     height: 40px;
-    padding-left: 16px;
     box-sizing: border-box;
     position: relative;
 }
 
-input {
+.field {
     background: transparent;
     border: none;
     outline: none;
@@ -1303,7 +1302,12 @@ input#e-mail:invalid {
     background-size: 14px 14px;
     background-position: center left 0px;
 }
-
+.email {
+    background: transparent;
+    border: none;
+    outline: none;
+    outline-offset: 0;
+}
 .button-email {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -2413,6 +2417,7 @@ input#e-mail:invalid {
     align-items: center;
     justify-content: center;
     border: none;
+    z-index: 1;
 }
 
 .quantity-plus-item {
