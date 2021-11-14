@@ -35,7 +35,7 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 18px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     min-width: 1440px;
@@ -73,18 +73,18 @@ body {
 .up-menu {
     display: flex;
     align-items: center;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 44px;
+    padding-right: 44px;
 }
 
 .up-menu-navigation-list {
     display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-    padding-left: 24px;
+    padding-left: 20px;
     justify-content: space-between;
     flex-grow: 1;
     margin: 0px;
+    list-style-type: none;
+    flex-wrap: wrap;
 }
 
 .navigation-logo {
@@ -102,7 +102,7 @@ body {
     font-weight: 400;
     text-decoration: none;
     margin: auto;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 20px 10px 45px;
     display: inline-block;
 }
 
@@ -132,7 +132,7 @@ body {
 .navigation-link-button {
     display: flex;
     position: relative;
-    width: 310px;
+    
     flex-grow: 1;
 }
 
@@ -144,7 +144,7 @@ body {
     display: flex;
     list-style-type: none;
     position: absolute;
-    left: -60px;
+    left: -40px;
     top: 55px;
     width: 1040px;
     padding: 33px 60px 27px;
@@ -173,11 +173,11 @@ body {
 .enter {
     box-sizing: border-box;
     height: 40px;
-    padding-left: 26px;
+    
     background-image: url("../img/enter.svg");
     background-repeat: no-repeat;
     background-size: 13px 12px;
-    background-position: center left 2px;
+    background-position: center left 20px;
     
 }
 
@@ -189,10 +189,11 @@ body {
     box-shadow: 0 0 0 2px #AF4FFF;
     box-sizing: border-box;
     border-radius: 20px;
+    outline: none;
 }
 
 .logout {
-    padding-left: 20px;
+    padding-left: 5px;
 }
 
 .logout:hover {
@@ -203,11 +204,12 @@ body {
     box-shadow: 0 0 0 2px #AF4FFF;
     box-sizing: border-box;
     border-radius: 20px;
+    outline: none;
 }
 
 .navigation-link-menu {
     display: block;
-    padding: 15px 0px;
+    padding: 15px 20px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     color: #000000;
@@ -220,7 +222,7 @@ body {
 }
 
 .menu-catalog {
-    width: 245px;
+    
     background-color: transparent;
     border: none;
 }
@@ -230,7 +232,7 @@ body {
     height: 50px;
     position: absolute;
     top: 0px;
-    right: 15px;
+    right: 0px;
     border: 2px solid #000000;
     box-sizing: border-box;
     border-radius: 50%;
@@ -276,6 +278,7 @@ body {
     box-shadow: 0 0 0 2px #AF4FFF;
     box-sizing: border-box;
     border-radius: 25px;
+    outline: none;
 }
 
 .menu-catalog:hover~.subcatalog-open {
@@ -299,11 +302,11 @@ body {
 .navigation-form input {
     width: 500px;
     height: 40px;
-    padding-left: 36px;
+    padding-left: 52px;
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    background-position: center left 4px;
+    background-position: center left 20px;
     box-sizing: border-box;
     opacity: 0.3;
     border-radius: 20px;
@@ -338,12 +341,14 @@ body {
     box-sizing: border-box;
     border-radius: 20px;
     opacity: 1;
+    outline: none;
 }
 
 .navigation-form input:not(:placeholder-shown):focus-within {
     box-shadow: 0 0 0 2px #000000;
     box-sizing: border-box;
     border-radius: 20px;
+    outline: none;
 }
 
 .search-button {
@@ -382,6 +387,7 @@ body {
     border-bottom-right-radius: 20px;
     border-color: #AF4FFF;
     border-width: 2px;
+    outline: none;
 }
 
 .navigation-items {
@@ -393,7 +399,7 @@ body {
 
 .compare {
     padding-left: 38px;
-    min-width: 136px;
+    /* min-width: 136px; */
     background-image: url("../img/compare.svg");
     background-repeat: no-repeat;
     background-size: 10px 12px;
@@ -409,7 +415,9 @@ body {
 .navigation-items:last-child {
     margin-left: 14px;
 }
-
+.basket-menu {
+    margin: 0px;
+}
 .compare:hover {
     opacity: 0.6;
 }
@@ -418,6 +426,7 @@ body {
     box-shadow: 0 0 0 2px #AF4FFF;
     box-sizing: border-box;
     border-radius: 20px;
+    outline: none;
 }
 
 .compare:active {
@@ -425,7 +434,7 @@ body {
 }
 
 .basket {
-    padding-left: 45px;
+    padding-left: 40px;
     background-image: url("../img/basket.svg");
     background-repeat: no-repeat;
     background-size: 16px 14px;
@@ -459,6 +468,7 @@ body {
     box-shadow: 0 0 0 2px #AF4FFF;
     box-sizing: border-box;
     border-radius: 20px;
+    outline: none;
 }
 
 .basket:active {
@@ -467,21 +477,23 @@ body {
 
 .down-menu-navigation-list {
     display: flex;
-    padding: 0 60px 35px;
-    list-style-type: none;
+    padding: 0px 40px 2px 40px;
     flex-wrap: wrap;
     margin: 20px 0px 0px 0px;
     flex-grow: 1;
     justify-content: space-between;
+    list-style-type: none;
 }
-
+.main-header {
+    padding-bottom: 35px;
+}
 .navigation-items-down:first-child {
-    margin-right: 260px;
-    width: 280px;
+    margin-right: auto;
+   
 }
 
 .navigation-items-down:last-child {
-    margin-left: auto;
+    margin-left: 40px;
 }
 
 .popover-cart {
@@ -553,6 +565,7 @@ body {
 .cart-item:focus .cart-item-logo {
     box-shadow: 0 0 0 5px #AF4FFF;
     box-sizing: border-box;
+    outline: none;
 }
 
 .cart-item:focus .cart-item-title {
@@ -562,6 +575,7 @@ body {
 .cart-item:focus .cart-item-button {
     box-shadow: 0 0 0 2px #AF4FFF;
     border-radius: 10px;
+    outline: none;
 }
 
 .cart-item:active {
@@ -622,6 +636,7 @@ body {
 .cart-summary-link:focus {
     box-shadow: 0 0 0 5px #AF4FFF;
     box-sizing: border-box;
+    outline: none;
 }
 
 .cart-summary-link:active {
@@ -629,9 +644,6 @@ body {
     background-color: #FFE17F;
 }
 
-.delivery {
-    margin-right: 30px;
-}
 
 .delivery:hover, .guarantee:hover, .contacts:hover {
     text-decoration-line: underline;
@@ -642,6 +654,7 @@ body {
     box-shadow: 0 0 0 2px #AF4FFF;
     box-sizing: border-box;
     border-radius: 25px;
+    outline: none;
 }
 
 .delivery:active, .guarantee:active, .contacts:active {
@@ -747,6 +760,7 @@ body {
 
 .slider-pagination-button:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .slider-pagination-button:active {
@@ -932,9 +946,9 @@ body {
 }
 
 .services {
-    margin-top: 75px;
+    margin-top: 80px;
     background: linear-gradient(#FFFFFF, 100px, #F0F0F0 100px);
-    padding-bottom: 70px;
+    padding-bottom: 65px;
 }
 
 .services-container {
@@ -1010,16 +1024,11 @@ body {
 
 .services-item {
     padding-left: 0;
-    margin: 70px 340px 60px 120px;
+    padding: 70px 340px 60px 120px;
     list-style-type: none;
     position: relative;
 }
 
-.services-logo {
-    position: absolute;
-    top: 15px;
-    left: 555px;
-}
 
 .slider-services-button-current {
     color: #FFE17F;
@@ -1039,13 +1048,26 @@ body {
 .slider-services-item:not(:last-child) {
     margin-bottom: 24px;
 }
-
+.delive {
+    background-image: url("../img/delivery.svg");
+    background-size: 136px 164px;
+    background-position: top 85px right 206px;
+    background-repeat: no-repeat;
+}
 .warranty {
     display: none;
+    background-image: url("../img/warranty.svg");
+    background-size: 171px 195px;
+    background-position: top 60px right 186px;
+    background-repeat: no-repeat;
 }
 
 .credit {
     display: none;
+    background-image: url("../img/credit.svg");
+    background-size: 156px 188px;
+    background-position: top 60px right 210px;
+    background-repeat: no-repeat;
 }
 
 .delive-item {
@@ -1300,38 +1322,46 @@ body {
     
 }
 
-input#e-mail {
+.email {
     width: 600px;
     line-height: 30px;
     margin-bottom: 3px;
     padding: 11px 0px;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
     opacity: 0.5;
+    background: transparent;
+    border: none;
+    outline: none;
+    outline-offset: 0;
+    
 }
 
 .mailing-form {
     align-self: center;
     padding: 0px;
-    margin-bottom: 130px;
+    margin-bottom: 127px;
     box-sizing: border-box;
     line-height: 46px;
     grid-column: 1 / -2;
     display: flex;
 }
 
-input#e-mail:hover {
+.email:hover {
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
-input#e-mail:focus {
+.email:focus {
     background-color: #DCDCDC;
 }
 
-input#e-mail:active {
+.email:active {
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 1);
 }
 
-input#e-mail:invalid {
+.email:invalid {
     box-shadow: 0px 3px 0px 0px rgba(255, 61, 61, 1);
 }
 
@@ -1347,15 +1377,6 @@ input#e-mail:invalid {
     background-position: center left 0px;
 }
 
-.email {
-    background: transparent;
-    border: none;
-    outline: none;
-    outline-offset: 0;
-    font-family: "Rubik", sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-}
 
 .button-email {
     display: block;
@@ -1382,6 +1403,7 @@ input#e-mail:invalid {
 
 .button-email:focus {
     border: 3px solid #AF4FFF;
+    outline: none;
 }
 
 .button-email:active {
@@ -1558,6 +1580,7 @@ input#e-mail:invalid {
 
 .range-toggle:focus {
     border: 2px solid #AF4FFF;
+    outline: none;
 }
 
 .range-toggle:active {
@@ -1675,6 +1698,7 @@ input#e-mail:invalid {
 
 .control:focus .control-mark {
     border: 2px solid #AF4FFF;
+    outline: none;
 }
 
 .control:focus .control-check {
@@ -1739,6 +1763,7 @@ input#e-mail:invalid {
 
 .control:focus .control-input[type="radio"]:checked+.control-mark {
     border: 2px solid #AF4FFF;
+    outline: none;
 }
 
 .control:focus .control-input[type="radio"]:checked+.control-mark::before {
@@ -1827,6 +1852,7 @@ input#e-mail:invalid {
 
 .sort-toggle:focus {
     box-shadow: 0 0 0 5px #AF4FFF;
+    outline: none;
 }
 
 .sort-toggle:active {
@@ -1885,6 +1911,7 @@ input#e-mail:invalid {
 
 .select-control:focus {
     box-shadow: 0 0 0 5px #AF4FFF;
+    outline: none;
 }
 
 .select-control:active {
@@ -1928,6 +1955,7 @@ input#e-mail:invalid {
 .product-card:focus 
 .product-card-image {
     box-shadow: 0 0 0 5px #AF4FFF;
+    outline: none;
 }
 
 .product-card:focus 
@@ -2012,6 +2040,7 @@ input#e-mail:invalid {
 
 .button-pagination-show-more:focus {
     box-shadow: 0px 0px 0px 5px #AF4FFF;
+    outline: none;
 }
 
 .button-pagination-show-more:active {
@@ -2065,6 +2094,7 @@ input#e-mail:invalid {
 
 .pagination-link-button:focus {
     box-shadow: 0px 0px 0px 5px #AF4FFF;
+    outline: none;
 }
 
 .pagination-link-button:active {
@@ -2091,6 +2121,7 @@ input#e-mail:invalid {
 
 .pagination-link:focus {
     box-shadow: 0px 0px 0px 5px #AF4FFF;
+    outline: none;
 }
 
 .pagination-link:active {
@@ -2118,7 +2149,7 @@ input#e-mail:invalid {
 .footer-menu {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 .footer-adress {
@@ -2163,6 +2194,7 @@ input#e-mail:invalid {
     box-shadow: 0 0 0 2px #AF4FFF;
     box-sizing: border-box;
     border-radius: 15px;
+    outline: none;
 }
 
 .footer-phone:active {
@@ -2197,6 +2229,7 @@ input#e-mail:invalid {
     box-shadow: 0 0 0 2px #AF4FFF;
     box-sizing: border-box;
     border-radius: 25px;
+    outline: none;
 }
 
 .button-button-all:active {
@@ -2247,6 +2280,7 @@ input#e-mail:invalid {
     box-shadow: 0 0 0 2px #af4fff;
     box-sizing: border-box;
     border-radius: 10px;
+    outline: none;
 }
 
 .footer-logo-main:active {
@@ -2306,6 +2340,7 @@ input#e-mail:invalid {
     box-shadow: 0 0 0 2px #af4fff;
     box-sizing: border-box;
     border-radius: 20px;
+    outline: none;
 }
 
 .footer-social-item:active .footer-social-link {
@@ -2335,16 +2370,16 @@ input#e-mail:invalid {
 }
 
 .modal-auth {
-    width: 920px;
-    min-height: 580px;
+    width: 900px;
+    min-height: 560px;
     box-shadow: 0 0 0 10px #000000;
 }
 
 .modal-close-button {
     position: absolute;
     padding: 0;
-    top: 77px;
-    right: 68px;
+    top: 70px;
+    right: 60px;
     width: 50px;
     height: 50px;
     background-color: #FFFFFF;
@@ -2363,6 +2398,7 @@ input#e-mail:invalid {
     box-shadow: 0 0 0 5px #AF4FFF;
     box-sizing: border-box;
     border-radius: 25px;
+    outline: none;
 }
 
 .modal-close-button:active {
@@ -2370,9 +2406,9 @@ input#e-mail:invalid {
 }
 
 .modal-title {
-    margin-top: 72px;
-    margin-left: 80px;
-    margin-bottom: 58px;
+    margin-top: 62px;
+    margin-left: 75px;
+    margin-bottom: 62px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -2383,7 +2419,7 @@ input#e-mail:invalid {
 
 .delieve-form {
     display: flex;
-    margin: 0 80px 80px 80px;
+    margin: 0 70px 60px 70px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -2391,7 +2427,7 @@ input#e-mail:invalid {
 .field-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    
 }
 
 .name-mail {
@@ -2433,7 +2469,7 @@ input#e-mail:invalid {
     line-height: 20px;
     letter-spacing: -0.02em;
     color: #000000;
-    padding: 7px 0px;
+    padding: 7px 0px 15px 0px;
 }
 
 .input-text-under {
@@ -2456,7 +2492,7 @@ input#e-mail:invalid {
 .button-send {
     display: block;
     width: 200px;
-    margin: 34px 0px 0px 0px;
+    margin: 45px 0px 0px 0px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -2490,14 +2526,15 @@ input#e-mail:invalid {
     position: absolute;
     top: 48px;
     left: 19px;
-    display: flex;
+    display: block;
     width: 32px;
     height: 32px;
-    padding: 0px;
+    padding: 14px 0px;
     margin: 0px;
     background-color: transparent;
     align-items: center;
     justify-content: center;
+    align-self: center;
     border: none;
     z-index: 1;
 }
@@ -2506,10 +2543,10 @@ input#e-mail:invalid {
     position: absolute;
     top: 48px;
     left: 110px;
-    display: flex;
+    display: block;
     width: 32px;
     height: 32px;
-    padding: 0px;
+    padding: 14px 0px;
     margin: 0px;
     background-color: transparent;
     align-items: center;
@@ -2548,11 +2585,13 @@ input#e-mail:invalid {
 .input-text-input:focus {
     box-shadow: 0 0 0 5px #AF4FFF;
     box-sizing: border-box;
+    outline: none;
 }
 
 .quantity-number:focus {
     box-shadow: 0 0 0 5px #AF4FFF;
     box-sizing: border-box;
+    outline: none;
 }
 
 .input-text-input:active {
@@ -2599,12 +2638,14 @@ input#e-mail:invalid {
     box-shadow: 0 0 0 2px #AF4FFF;
     box-sizing: border-box;
     border-radius: 50%;
+    outline: none;
 }
 
 .quantity-plus-item:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
     box-sizing: border-box;
     border-radius: 50%;
+    outline: none;
 }
 
 .label-item:hover~.popover-modal {
