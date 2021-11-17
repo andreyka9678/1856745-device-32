@@ -2041,7 +2041,13 @@ body {
     visibility: hidden;
     
 }
-
+.product-card-button:hover {
+    background: #FFC700;
+}
+.product-card-button:active {
+    opacity: 0.3;
+    background: #FFC700;
+}
 .product-card-title-link {
     display: flex;
     justify-content: space-between;
