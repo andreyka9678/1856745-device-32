@@ -3,6 +3,7 @@
 * Студент: [Andrey Volkov](https://up.htmlacademy.ru/htmlcss/32/user/1856745).
 * Наставник: Андрей Грачев.
 
+[Опубликованная версия](https://andreyka9678.github.io/device/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
